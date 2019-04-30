@@ -1,0 +1,43 @@
+.container1 {
+  display: grid;
+  grid-template-columns: [col1] 100px [col2] 100px [col3] 200px [col4] 100px [col5] 100px [colend];
+  grid-template-rows: [row1] 25% [row2] 100px [row3] auto [rowend]; }
+
+.sub-container {
+  grid-template-columns: 50% 50%; }
+
+.item-a {
+  grid-column-start: col3;
+  grid-column-end: col4;
+  grid-row-start: row1;
+  grid-row-end: row2;
+  justify-self: end; }
+
+.item-b {
+  grid-column-start: col3;
+  grid-column-end: col4;
+  grid-row-start: row2;
+  grid-row-end: row3;
+  justify-self: center; }
+
+.item-c {
+  grid-column-start: col3;
+  grid-column-end: col4;
+  grid-row-start: row3;
+  grid-row-end: rowend; }
+
+.item-a1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: left; }
+
+.item-a2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: end; }
+
+/*# sourceMappingURL=app.css.map */

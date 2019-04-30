@@ -1,0 +1,53 @@
+
+.change-password-wrapper {
+	display: grid;
+    min-height:100vh;
+	grid-template-rows: 1fr 10fr 1fr;
+	align-content: stretch;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #e0e0e0;
+	border-radius: 3px;
+	padding: 0px 20px 40px 20px;
+	margin: 2px 20px 40px 20px;
+}
+
+.change-password-status {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.change-pwd-header {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.application-header {
+	font-weight: bold;
+}
+
+.user-name-header {
+	font-weight: bold;
+}
+
+.status-header {
+	font-weight: bold;
+}
+
+.change-pwd-data {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.application {
+}
+
+.user-name {
+}
+
+.status {
+}
+
+.submit-button {
+	justify-self: end;
+}

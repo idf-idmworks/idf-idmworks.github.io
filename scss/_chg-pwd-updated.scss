@@ -1,0 +1,30 @@
+
+.change-password-wrapper-updated {
+	display: grid;
+    min-height:100vh;
+	grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
+	align-content: stretch;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #e0e0e0;
+	border-radius: 3px;
+	padding: 0px 20px 40px 20px;
+	margin: 2px 20px 40px 20px;
+}
+
+.change-password-info-banner {
+	margin-top: 10px;
+}
+
+.change-password-label {
+	
+}
+
+.change-password-input-box {
+	
+}
+
+.submit-button {
+	justify-self: end;
+	align-self: end;
+}

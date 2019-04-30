@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NEIS</title>
+    <link rel="stylesheet" type="text/css" href="css/css-grid-neis.css"></li>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-logo-cell">
+        <div class="header-logo">
+          <div><img src="https://via.placeholder.com/175x16.png"></div>
+        </div>        
+      </div>
+      <div class="header-non-logo">
+        <div class="header-non-logo-navigation-bar">
+          <div><i class="material-icons">reorder</i></div>          
+        </div>
+        <div></div>
+        <div class="header-non-logo-logged-in-user-info">
+          <div><i class="material-icons">account_circle</i></div>     
+          <div class="loggedin-user-name"><span>admin</span></div>     
+          <div><i class="material-icons">arrow_drop_down</i></div>     
+        </div>
+      </div>
+      <div class="sidebar-with-login-info">
+        <div class="login-info-sidebar">
+          <div class="login-info-sidebar-icon">
+            <div><i class="material-icons md-36">account_circle</i></div>           
+          </div>
+          <div class="login-info-sidebar-user-info">
+            <div class="login-info-sidebar-user-name"><span>admin</span></div>
+            <div class="login-info-sidebar-user-group-info">
+              <div class="login-info-sidebar-user-group-info-icon"><i class="material-icons md-13">group</i></div>
+              <div class="login-info-sidebar-user-group-info-name">sysadmin</div>
+            </div>
+          </div>
+          <div class="login-info-sidebar-settings-icon">
+            <div><i class="material-icons md-16">settings</i></div>           
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">av_timer</i></div>
+            <div class="sidebar-item-text">Dashboard</div>
+          </div>
+          <div class="sidebar-item-label-cell">
+            <div class="sidebar-item-label">MY ACCOUNT</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">home</i></div>
+            <div class="sidebar-item-text">User Homepage</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">assignment_ind</i></div>
+            <div class="sidebar-item-text">My Profile</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">lock</i></div>
+            <div class="sidebar-item-text"><a href="chg-pwd.html">Change Password</a></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">chat_bubble_outline</i></div>
+            <div class="sidebar-item-text">Security Questions</div>
+          </div>
+          <div class="sidebar-item-label-cell">
+            <div class="sidebar-item-label">ADMINISTRATION</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">assignment_ind</i></div>
+            <div class="sidebar-item-text">Users</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">group</i></div>
+            <div class="sidebar-item-text">Groups</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">email</i></div>
+            <div class="sidebar-item-text">Invite New Users</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">mail_outline</i></div>
+            <div class="sidebar-item-text">Pending Invites</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">swap_horiz</i></div>
+            <div class="sidebar-item-text">Import / Export</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">people</i></div>
+            <div class="sidebar-item-text">Administrators</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">settings</i></div>
+            <div class="sidebar-item-text">Settings</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-with-pagename-footer">
+        <div class="pageinfo">
+          <div class="pageinfo-icon"><i class="material-icons md-18">lock</i></div>
+          <div class="pageinfo-broadpage">My Account</div>
+          <div class="pageinfo-separator">/</div>
+          <div class="pageinfo-specificpage">Change Password</div>
+        </div>
+        <div class="content">
+          <div class="change-password-wrapper-updated">
+	<div class="change-password-info-banner">
+		<div class="alert alert-dark" role="alert">
+			Your last password change was done at 5pm on Apr 29, 2019. Click <a href="chg-pwd-status-3.html">here</a> to see details.
+		</div>
+	</div>
+	<div class="change-password-info-banner">
+		<div class="alert alert-dark" role="alert">
+			Password Policy:
+			<ul>
+				<li>Minimum 8 characters</li>
+				<li>At least two non-alphanumeric characters</li>
+			</ul>
+		</div>
+	</div>
+	<div class="alert alert-dark" role="alert">
+		Changing password will change password for following applications:
+		<ul>
+			<li>RACF</li>
+			<li>Active Directory</li>
+		</ul>
+	</div>
+	<div>
+		<div class="change-password-info-banner">
+			Current Password
+		</div>
+		<div class="change-password-input-box">
+			<input type="password" class="form-control" placeholder="Current Password">
+		</div>
+	</div>
+	<div>
+		<div class="change-password-info-banner">
+			<label for="exampleInputEmail1">New Password</label>
+		</div>
+		<div class="change-password-input-box">
+			<input type="password" class="form-control" placeholder="New Password">
+		</div>
+	</div>
+	<div>
+		<div class="change-password-info-banner">
+			<label for="exampleInputEmail1">Confirm New Password</label>
+		</div>
+		<div class="change-password-input-box">
+			<input type="password" class="form-control" placeholder="Confirm New Password">
+		</div>
+	</div>
+	<div class="submit-button">
+		<!-- Button trigger modal -->
+		<a class="btn btn-secondary btn-sm" href="chg-pwd-status-1.html" role="button">
+		  Change Password
+		</a>
+	</div>
+</div>
+        </div>
+        <div class="footer">
+          <div class="footer-text">
+            <span>© 2019. Non-Employee Identity Suite by IDMWORKS</span>
+          </div>
+          <div class="footer-support-symbol">
+            <div><img src="https://via.placeholder.com/16.png"></div>            
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
