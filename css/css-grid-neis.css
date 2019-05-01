@@ -29,11 +29,8 @@
 
 .change-password-wrapper-updated {
   display: grid;
-  grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+  grid-template-rows: auto auto auto 1fr auto;
   align-content: stretch; }
-
-.change-password-info-banner {
-  margin-top: 10px; }
 
 .current-and-new-passwords {
   display: grid;
@@ -52,7 +49,7 @@
 
 .change-password-wrapper {
   display: grid;
-  grid-template-rows: 4fr 4fr 7fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
   align-content: stretch; }
 
 .change-password-info-banner {
@@ -72,8 +69,46 @@
 .submit-button {
   justify-self: end; }
 
+.app-config-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr; }
+
 .add-app-button {
-  justify-self: end; }
+  justify-self: end;
+  margin-top: 20px; }
+
+.configured-apps-table {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-self: top;
+  margin-top: 20px;
+  margin-right: 80px;
+  margin-left: 20px;
+  grid-column-gap: 20px;
+  grid-template-rows: auto 1fr; }
+
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid; }
+
+.app-logo {
+  padding: 5px; }
+
+.app-name-and-desc {
+  display: grid;
+  padding-left: 20px;
+  grid-template-rows: auto 1fr; }
+
+.app-desc {
+  font-size: 0.8rem; }
+
+.hamburger {
+  align-self: center;
+  justify-self: center;
+  padding-right: 10px; }
 
 .wrapper {
   display: grid;
@@ -242,13 +277,12 @@
 .content {
   grid-area: content;
   display: grid;
-  min-height: 100vh;
   border-width: 2px;
   border-style: solid;
   border-color: #e0e0e0;
   border-radius: 3px;
   padding: 0px 20px 40px 20px;
-  margin: 2px 20px 40px 20px; }
+  margin: 10px 20px 40px 20px; }
 
 .footer {
   display: grid;

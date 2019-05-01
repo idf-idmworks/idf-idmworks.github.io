@@ -1,12 +1,11 @@
 
 .change-password-wrapper-updated {
 	display: grid;
-	grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+	grid-template-rows: auto auto auto 1fr auto;
 	align-content: stretch;
 }
 
 .change-password-info-banner {
-	margin-top: 10px;
 }
 
 .current-and-new-passwords {
