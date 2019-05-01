@@ -1,4 +1,5 @@
 @import 'change-pwd';
+@import 'app-config';
 
 .wrapper {
 	display: grid;
@@ -192,6 +193,7 @@
 	font-size: .8125rem;
 	font-weight: 500;
 	align-self: center;
+	padding-left: 20px;
 }
 
 .pageinfo-specificpage {
@@ -200,10 +202,19 @@
 	font-size: .8125rem;
 	font-weight: 500;
 	align-self: center;
+	padding-left: 20px;
 }
 
 .content {
 	grid-area: content;
+	display: grid;
+    min-height:100vh;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #e0e0e0;
+	border-radius: 3px;
+	padding: 0px 20px 40px 20px;
+	margin: 2px 20px 40px 20px;
 }
 
 .footer {

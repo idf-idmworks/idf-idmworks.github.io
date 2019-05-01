@@ -1,18 +1,11 @@
-.change-password-wrapper {
+.change-password-wrapper-status {
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: 1fr 10fr 1fr;
-  align-content: stretch;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #e0e0e0;
-  border-radius: 3px;
-  padding: 0px 20px 40px 20px;
-  margin: 2px 20px 40px 20px; }
+  grid-template-rows: 1fr 2fr 1fr 3fr; }
 
 .change-password-status {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  grid-template-rows: auto;
+  align-items: start; }
 
 .change-pwd-header {
   display: grid;
@@ -36,18 +29,22 @@
 
 .change-password-wrapper-updated {
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
-  align-content: stretch;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #e0e0e0;
-  border-radius: 3px;
-  padding: 0px 20px 40px 20px;
-  margin: 2px 20px 40px 20px; }
+  grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+  align-content: stretch; }
 
 .change-password-info-banner {
   margin-top: 10px; }
+
+.current-and-new-passwords {
+  display: grid;
+  align-content: start; }
+
+.label-and-input-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: stretch;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .submit-button {
   justify-self: end;
@@ -55,20 +52,27 @@
 
 .change-password-wrapper {
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: 4fr 4fr 4fr 4fr 4fr 1fr;
-  align-content: stretch;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #e0e0e0;
-  border-radius: 3px;
-  padding: 0px 20px 40px 20px;
-  margin: 2px 20px 40px 20px; }
+  grid-template-rows: 4fr 4fr 7fr 1fr;
+  align-content: stretch; }
 
 .change-password-info-banner {
   margin-top: 10px; }
 
+.current-and-new-passwords {
+  display: grid;
+  align-content: start; }
+
+.label-and-input-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: stretch;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 .submit-button {
+  justify-self: end; }
+
+.add-app-button {
   justify-self: end; }
 
 .wrapper {
@@ -224,17 +228,27 @@
   font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: .8125rem;
   font-weight: 500;
-  align-self: center; }
+  align-self: center;
+  padding-left: 20px; }
 
 .pageinfo-specificpage {
   grid-area: pageinfo-specificpage;
   font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: .8125rem;
   font-weight: 500;
-  align-self: center; }
+  align-self: center;
+  padding-left: 20px; }
 
 .content {
-  grid-area: content; }
+  grid-area: content;
+  display: grid;
+  min-height: 100vh;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-radius: 3px;
+  padding: 0px 20px 40px 20px;
+  margin: 2px 20px 40px 20px; }
 
 .footer {
   display: grid;
