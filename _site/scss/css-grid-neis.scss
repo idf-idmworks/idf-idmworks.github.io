@@ -1,5 +1,10 @@
 @import 'change-pwd';
 @import 'app-config';
+@import 'add-application';
+@import 'objects-to-manage';
+@import 'configure-account-obj';
+@import 'configure-entitlements';
+@import 'summary';
 
 .wrapper {
 	display: grid;
