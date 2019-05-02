@@ -14,7 +14,15 @@ layout: default
 				<label for="exampleInputEmail1">Application Name</label>
 			</div>
 			<div class="drop-down">
-				<input type="text" class="form-control readonly" placeholder="Active Directory">
+				<input type="text" class="form-control readonly" placeholder="Active Directory" readonly>
+			</div>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Application Template</label>
+			</div>
+			<div class="drop-down">
+				<input type="text" class="form-control readonly" placeholder="Active Directory" readonly>
 			</div>
 		</div>		
 		<div class="label-and-input-box">
@@ -32,14 +40,29 @@ layout: default
 		</div>		
 		<div class="label-and-input-box">
 			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Correlation Attribute</label>
+			</div>
+			<div class="drop-down">
+				<input type="text" class="form-control readonly" placeholder="email" readonly>
+			</div>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
 				<label for="exampleInputEmail1">Manage Password</label>
 			</div>
 			<div class="drop-down">
-				<div class="form-check">
-				  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-				</div>
+			  <input type="text" class="form-control" placeholder="Yes" readonly>
 			</div>
-		</div>		
+		</div>	
+		<div class="save-template">
+			<div class="custom-control custom-checkbox template-chk-box">
+			  <input type="checkbox" class="custom-control-input" id="customCheck1">
+			  <label class="custom-control-label" for="customCheck1">Save as Template</label>
+			</div>
+			<div class="template-name">
+			  <input type="text" class="form-control readonly" placeholder="Template Name">
+			</div>
+		</div>
 	</div>
 
 	<div class="prev-next-buttons">

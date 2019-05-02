@@ -225,7 +225,8 @@
 
 .prev-next-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10px; }
 
 .next-button {
   justify-self: end;
@@ -323,6 +324,24 @@
 .prev-button {
   justify-self: start;
   margin-left: 20px; }
+
+.save-template {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: stretch;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 10px; }
+
+.template-name {
+  padding-left: 20px;
+  padding-right: 300px; }
+
+.template-chk-box {
+  align-self: center; }
 
 .wrapper {
   display: grid;
