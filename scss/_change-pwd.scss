@@ -1,14 +1,7 @@
-@import 'chg-pwd-status';
-@import 'chg-pwd-updated';
-
 .change-password-wrapper {
 	display: grid;
 	grid-template-rows: auto auto 1fr auto;
 	align-content: stretch;
-}
-
-.change-password-info-banner {
-	margin-top: 10px;
 }
 
 .current-and-new-passwords {
