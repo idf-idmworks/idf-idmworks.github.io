@@ -10,8 +10,9 @@
 @import 'configure-account-obj';
 @import 'configure-entitlements';
 @import 'summary';
-
+@import 'account-recon';
 @import 'pwd-mgmt';
+@import 'status';
 
 .wrapper {
 	display: grid;

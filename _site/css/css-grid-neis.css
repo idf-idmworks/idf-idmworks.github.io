@@ -181,6 +181,22 @@
 .center-chk-box {
   align-self: center; }
 
+.account-recon-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: start; }
+
+.account-recon-wrapper .hamburger {
+  justify-self: end;
+  align-self: start; }
+
+.account-recon-wrapper .app-name-and-desc {
+  padding: 0px; }
+
+.account-recon-wrapper .chg-pwd-data {
+  border: 1px #e0e0e0;
+  border-style: none none solid none; }
+
 .wrapper-grid, .change-password-wrapper, .change-password-update-wrapper, .change-password-wrapper-status {
   display: grid;
   align-content: stretch; }
@@ -217,6 +233,21 @@
 
 .submit-button {
   justify-self: end; }
+
+.status-wrapper {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  align-items: start;
+  grid-row-gap: 10px; }
+
+.two-colms {
+  display: grid;
+  grid-template-columns: auto auto; }
+
+.date-time {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-right: 150px; }
 
 .wrapper {
   display: grid;
