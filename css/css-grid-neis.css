@@ -236,18 +236,35 @@
 
 .status-wrapper {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr;
   align-items: start;
   grid-row-gap: 10px; }
 
 .two-colms {
   display: grid;
-  grid-template-columns: auto auto; }
+  grid-template-columns: 2fr 2fr 3fr; }
 
 .date-time {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-right: 150px; }
+  justify-self: start;
+  padding-right: 10px; }
+
+.status-reason {
+  font-size: .8rem;
+  color: #ced4da; }
+
+.logdetails {
+  background-color: #e9ecef; }
+
+#search-box {
+  padding-left: 20px; }
+
+.index-page-wrapper {
+  padding: 0px 20px;
+  display: grid; }
+
+.title {
+  justify-self: center;
+  padding: 20px 0px; }
 
 .wrapper {
   display: grid;
@@ -336,13 +353,16 @@
   border-width: 0px 0px 0px 0px;
   border-style: solid; }
 
-.sidebar-item {
+.sidebar-item, .sidebar-item-with-badge {
   display: grid;
   grid-template-columns: 33px auto;
   grid-template-rows: 44px;
   border-width: 0px 0px 1px 0px;
   border-style: solid;
   padding-left: 20px; }
+
+.sidebar-item-with-badge {
+  grid-template-columns: 33px auto 1fr; }
 
 .sidebar-item-label-cell {
   display: grid;
@@ -367,7 +387,8 @@
   align-self: center;
   font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: .8125rem;
-  font-weight: 500; }
+  font-weight: 500;
+  padding-right: 2px; }
 
 .content-with-pagename-footer {
   grid-area: content-with-pagename-footer;
