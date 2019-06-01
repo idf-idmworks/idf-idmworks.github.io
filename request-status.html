@@ -1,0 +1,188 @@
+---
+broadpage: Administration
+specificpage: Request Status
+layout: default
+---
+
+<div class="status-wrapper">
+	<div class="two-colms">
+		<div class="date-time">
+	      <div class="input-group input-group-sm mb-3">
+	        <div class="input-group-prepend">
+	          <span class="input-group-text" id="inputGroupPrepend"><i class="material-icons md-18">date_range</i></span>
+	        </div>
+	        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Start Date" aria-describedby="inputGroupPrepend" required>
+	        <div class="input-group-prepend">
+	          <span class="input-group-text" id="inputGroupPrepend"><i class="material-icons md-18">access_time</i></span>
+	        </div>
+	        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Start Time" aria-describedby="inputGroupPrepend" required>
+	      </div>
+		</div>
+		<div class="date-time">
+	      <div class="input-group input-group-sm mb-3">
+	        <div class="input-group-prepend">
+	          <span class="input-group-text" id="inputGroupPrepend"><i class="material-icons md-18">date_range</i></span>
+	        </div>
+	        <input type="text" class="form-control" id="validationCustomUsername" placeholder="End Date" aria-describedby="inputGroupPrepend" required>
+	        <div class="input-group-prepend">
+	          <span class="input-group-text" id="inputGroupPrepend"><i class="material-icons md-18">access_time</i></span>
+	        </div>
+	        <input type="text" class="form-control" id="validationCustomUsername" placeholder="End Time" aria-describedby="inputGroupPrepend" required>
+	      </div>
+		</div>
+		<div id="search-box" class="input-group input-group-sm mb-3">
+			<input type="text" class="form-control" id="validationCustomUsername" placeholder="Search Text" aria-describedby="inputGroupPrepend" required>
+			<div class="input-group-prepend">
+			  <span class="input-group-text" id="inputGroupPrepend"><i class="material-icons md-18">search</i></span>
+			</div>
+		</div>
+	</div>
+
+	<table class="table table-sm">
+	  <thead class="thead-light">
+	    <tr>
+	      <th scope="col" style="width: 2%"><i class="material-icons md-18">keyboard_arrow_right</i></th>
+	      <th scope="col" style="width: 15%">Time</th>
+	      <th scope="col" style="width: 20%">Requestor</th>
+	      <th scope="col" style="width: 30%">Operation</th>
+	      <th scope="col" style="width: 23%">Information</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr data-toggle="collapse" data-target="#logdetails-1">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:32:03</td>
+	      <td>Octavio Lopez</td>
+	      <td><div><div>Assign Application</div><div class="status-reason">Success</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: Amol Datar</div>
+	      		<div>Application: Active Directory</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-1">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	    <tr data-toggle="collapse" data-target="#logdetails-2">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:31:23</td>
+	      <td>Octavio Lopez</td>
+	      <td><div><div>Assign Application</div><div class="status-reason">Failed (Gateway not reachable)</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: Amol Datar</div>
+	      		<div>Application: Active Directory</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-2">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	    <tr data-toggle="collapse" data-target="#logdetails-3">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:29:32</td>
+	      <td>Stiles Bird</td>
+	      <td><div><div>Enable NEIS User</div><div class="status-reason">Success</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: David White</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-3">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	    <tr data-toggle="collapse" data-target="#logdetails-4">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:28:59</td>
+	      <td>Stiles Bird</td>
+	      <td><div><div>Disable NEIS User</div><div class="status-reason">Failed (invalid authentication)</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: Scott Ford</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-4">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	    <tr data-toggle="collapse" data-target="#logdetails-5">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:27:51</td>
+	      <td>John Doe</td>
+	      <td><div><div>Change Password</div><div class="status-reason">Failed (password does not meet policy on AD)</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: John Doe</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-5">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	    <tr data-toggle="collapse" data-target="#logdetails-6">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:26:43</td>
+	      <td>Octavio Lopez</td>
+	      <td><div><div>Enable Target Account</div><div class="status-reason">Failed (Account does not exist on target system)</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: John Doe</div>
+	      		<div>Application: SQL Server</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-6">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	    <tr data-toggle="collapse" data-target="#logdetails-7">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:25:54</td>
+	      <td>Octavio Lopez</td>
+	      <td><div><div>Disable Target Account</div><div class="status-reason">Failed (Account does not exist on target system)</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: John Doe</div>
+	      		<div>Application: SQL Server</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-7">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	    <tr data-toggle="collapse" data-target="#logdetails-8">
+	      <td>
+			<i class="material-icons md-18">keyboard_arrow_right</i>
+	      </td>
+	      <td>May 07 17:25:54</td>
+	      <td>Octavio Lopez</td>
+	      <td><div><div>Update Target Account</div><div class="status-reason">Failed (invaid value)</div></div></td>
+	      <td>
+	      	<div>
+	      		<div>Requestee: John Doe</div>
+	      		<div>Application: Active Directory</div>
+	      	</div>
+	      </td>
+	    </tr>
+	    <tr class="collapse logdetails" id="logdetails-8">
+	      <td colspan="5"><span>Request object<br>Response Object</span></td>
+	    </tr>
+	  </tbody>
+	</table>
+
+</div>

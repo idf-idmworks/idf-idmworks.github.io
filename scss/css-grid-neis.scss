@@ -14,6 +14,16 @@
 @import 'pwd-mgmt';
 @import 'status';
 
+.index-page-wrapper {
+	padding: 0px 20px;
+	display: grid;
+}
+
+.title {
+	justify-self: center;
+	padding: 20px 0px;
+}
+
 .wrapper {
 	display: grid;
     min-height:100vh;
@@ -126,13 +136,22 @@
 	border-style: solid;	
 }
 
-.sidebar-item {
+%sidebar-item {
 	display: grid;
 	grid-template-columns: 33px auto;
 	grid-template-rows: 44px;
 	border-width: 0px 0px 1px 0px;
 	border-style: solid;
 	padding-left: 20px;
+}
+
+.sidebar-item {
+	@extend %sidebar-item;
+}
+
+.sidebar-item-with-badge {
+	@extend %sidebar-item;
+	grid-template-columns: 33px auto 1fr;
 }
 
 .sidebar-item-label-cell {
@@ -162,7 +181,9 @@
 	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	font-size: .8125rem;
 	font-weight: 500;
+	padding-right: 2px;
 }
+
 
 .content-with-pagename-footer {
 	grid-area: content-with-pagename-footer;

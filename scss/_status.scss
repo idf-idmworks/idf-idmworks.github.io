@@ -1,0 +1,29 @@
+.status-wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	align-items: start;
+	grid-row-gap: 10px;
+}
+
+.two-colms {
+	display: grid;
+	grid-template-columns: 2fr 2fr 3fr;
+}
+
+.date-time {
+	justify-self: start;
+	padding-right: 10px;
+}
+
+.status-reason {
+	font-size: .8rem;
+	color: #ced4da;
+}
+
+.logdetails {
+	background-color: #e9ecef;
+}
+
+#search-box {
+	padding-left: 20px;
+}
